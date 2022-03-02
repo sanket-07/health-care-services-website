@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Fairy</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/external-flatart-icons-flat-flatarticons/70/000000/external-health-care-health-care-and-medical-flatart-icons-flat-flatarticons.png">
+    <!-- link css file -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Montserrat:wght@300;400;500;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="header" id="home">
+        <div class="container-fluid flex flex-wrap p-2 flex-col md:flex-row items-center stick head">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 mt-3">
+                <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/70/000000/external-health-care-health-care-and-medical-flatart-icons-flat-flatarticons.png" class="ml-xl-8 ml-2 ml-md-4 ml-lg-6"/>
+              <span class="ml-md-3 mt-3 ml-3 h2 div">Care Fairy</span>
+            </a>
+            <nav class="md:ml-auto  flex flex-wrap items-right text-base justify-center nav-links " id="navLinks">
+              <i class="fa fa-close" onclick="hideMenu()"></i>
+              <a href="#home" class="mr-7 hover:text-gray-900 d-block d-lg-block d-xl-block d-xxl-block">Home</a>
+              <a href="#about" class="mr-7 hover:text-gray-900 d-block d-lg-block d-xl-block d-xxl-block">About</a>
+              <a href="#service" class="mr-7 hover:text-gray-900 d-block d-lg-block d-xl-block d-xxl-block">Services</a>
+              <a href="#gallery" class="mr-7 hover:text-gray-900 d-block d-lg-block d-xl-block d-xxl-block">Gallery</a>
+              <a href="#contact" class="mr-7 hover:text-gray-900 d-block d-lg-block d-xl-block d-xxl-block">Contact</a>
+            </nav>
+            <i class="fa fa-navicon" onclick="showMenu()"></i>
+        </div>
+        <div class="header-content">
+            <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="flex flex-col text-center w-full mb-20">
+                    <h2 class="text-xs text-indigo-500 tracking-widest font-large title-font mb-1 text-white h1 ">Care Fairy Health Care</h2>
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 text-warning"><span>India's</span> Best <span>Health Care</span> Services <br>Available Here</h1>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum asperiores unde harum fugiat repudiandae sequi commodi illo ipsum sint omnis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti reiciendis natus vel tenetur..</p>
+                  </div>
+                  <a href="#contact">
+                      <button class="flex mx-auto mt-0 text-white border-3 border-blue-500 py-2 px-8 focus:outline-blue bg-none rounded text-lg btn">Make An Appointment</button>
+                  </a>
+              </section>
+        </div>
+    </section>
+    
+    
+    <section class="text-gray-600 body-font my-5" id="gallery">
+        <p class="fw-bold text-center mt-1 mb-1">Health Care Gallery</p>
+        <div class="container px-5 py-5 mx-auto flex flex-wrap">
+          <div class="flex w-full mb-10 flex-wrap">
+          <div class="flex flex-wrap md:-m-2 -m-1">
+            <div class="flex flex-wrap w-1/2">
+              <div class="md:p-2 p-1 w-1/2">
+                <img alt="gallery" class="w-full object-cover h-full object-center block img-thumbnail" src="./photos/img1.jpg">
+              </div>
+              <div class="md:p-2 p-1 w-1/2">
+                <img alt="gallery" class="w-full object-cover h-full object-center block img-thumbnail" src="./photos/img2.jpg">
+              </div>
+              <div class="md:p-2 p-1 w-full">
+                <img alt="gallery" class="w-full h-full object-cover object-center block img-thumbnail" src="./photos/img6.jpg">
+              </div>
+            </div>
+            <div class="flex flex-wrap w-1/2">
+              <div class="md:p-2 p-1 w-full">
+                <img alt="gallery" class="w-full h-full object-cover object-center block img-thumbnail" src="./photos/img5.jpg">
+              </div>
+              <div class="md:p-2 p-1 w-1/2">
+                <img alt="gallery" class="w-full object-cover h-full object-center block img-thumbnail" src="./photos/img4.jpg">
+              </div>
+              <div class="md:p-2 p-1 w-1/2">
+                <img alt="gallery" class="w-full object-cover h-full object-center block img-thumbnail" src="./photos/img3.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+    <section class="services container mt-5" id="service">
+
+        <p class="fw-bold text-center my-25 mb-10">Our Services</p>
+        <div class="container hover mt-16">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xl-3 mb-5 cd mb-md-5 mb-sm-5 ml-xl-5 ml-lg-5 ml-md-5">
+                    <div class="card text-center">
+                        <i class="fas fa-briefcase-medical fa-4x card-img-top mt-12 text-primary"></i>
+                        <div class="card-body">
+                            <h3 class="card-title text-center mb-10 h2 text-wrap">Medical <br> Treatment</h3>
+                            <div class="card-text mb-4 justify-center">
+                                <p class="fs-6">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae debitis dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sit in eaque? Eius qui voluptates adipisci omnis corporis nemo a!
+                                </p>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="col-lg-6 cd col-md-6 col-sm-12 col-xl-3 mb-md-5 mb-5 mb-sm-5 ml-xl-5 ml-lg-5 ml-md-5">
+                    <div class="card text-center">
+                        <i class="fas fa-ambulance fa-4x card-img-top mt-12 text-primary"></i>
+                        <div class="card-body">
+                            <h3 class="card-title text-center h2  mb-10 text-wrap">Emergency <br>Help</h3>
+                            <div class="card-text mb-4 justify-center">
+                                <p class="fs-6">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae debitis dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sit in eaque? Eius qui voluptates adipisci omnis corporis nemo a!
+                                </p>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="col-lg-6 cd col-md-6 col-sm-12 col-xl-3 mb-md-5 mb-5 mb-sm-5 ml-xl-5 ml-lg-5 ml-md-5">
+                    <div class="card text-center">
+                        <i class="fas fa-vial fa-4x card-img-top mt-12 text-primary"></i>
+                        <div class="card-body">
+                            <h3 class="card-title text-center h2 mb-10 text-wrap">Blood <br>Test</h3>
+                            <div class="card-text mb-4 justify-center">
+                                <p class="fs-6">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae debitis dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sit in eaque? Eius qui voluptates adipisci omnis corporis nemo a!
+                                </p>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="col-lg-6 cd col-md-6 col-sm-12 col-xl-3 mb-md-5 mb-5 mb-sm-5 ml-xl-5 ml-lg-5 ml-md-5">
+                    <div class="card text-center">
+                        <i class="fas fa-user-md fa-4x card-img-top mt-12 text-primary"></i>
+                        <div class="card-body b-0">
+                            <h3 class="card-title text-center h2 mb-10 text-wrap">Qualified <br> Docters</h3>
+                            <div class="card-text mb-4 justify-center">
+                                <p class="fs-6">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae debitis dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat sit in eaque? Eius qui voluptates adipisci omnis corporis nemo a!
+                                </p>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </section>
+   
+
+
+    <section id="about">
+        <p class="fw-bold text-center mt-25 p">About Us</p>
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-2 mx-auto flex flex-col">
+              <div class="lg:w-4/6 mx-auto">
+                <div class="rounded-lg h-64 overflow-hidden">
+                  <img alt="content" class="object-contain object-center h-full w-full" src="./photos/about1.jpg">
+                </div>
+                <div class="flex flex-col sm:flex-row mt-10">
+                  <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                    <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                      
+                    <img src="./photos/about2.jpg" class="w-20 h-20  p-1 rounded-full"/>
+                    </div>
+                    <div class="flex flex-col items-center text-center justify-center">
+                      <h2 class="font-medium title-font mt-1 text-gray-900 text-lg">Dr. Aditya Gupta.</h2>
+                      <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                      <p class="text-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo nostrum natus eligendi rerum deleniti.</p>
+                    </div>
+                  </div>
+                  <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-10 text-center sm:text-left">
+                    <p class="leading-relaxed text-lg mb-4 justify-content-center ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur itaque temporibus esse delectus nesciunt hic eaque quia enim et officiis illum, veritatis, sit a autem. Incidunt tempora molestiae pariatur mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio.</p>
+                    <a class="text-indigo-500 inline-flex items-center">Learn More
+                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    </section>
+    
+
+
+    <section id="contact">
+        <p class="fw-bold text-center mt-25 mb-10 mb-10 ">Contact Us</p>
+        <section class="text-gray-600 body-font relative mt-5">
+            <div class="absolute inset-0 bg-none">
+              <iframe width="100%" height="80%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=%C4%B0zmir+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed" style="filter: grayscale(0.2) contrast(1.2) opacity(1);"></iframe>
+            </div>
+            <div class="container px-5 py-20 mx-auto flex">
+              <div class="lg:w-1/3 md:w-1/2 bg-white border border-gray-200 rounded-lg p-3 flex flex-col md:ml-auto w-full mt-1 md:mt-0 relative z-2 shadow-md">
+                <h2 class=" text-lg mb-1 font-medium title-font text-center text-danger text-bold h1">Make An Appointment</h2>
+                <p class="leading-relaxed mb-2 text-gray-600 text-center text-primary">When Do You Want To Come?</p>
+                <div class="relative mb-2">
+                    <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                    <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  </div>
+                <div class="relative mb-2">
+                  <label for="email" class="leading-7 text-sm text-gray-600">Phone</label>
+                  <input type="number" id="number" name="number" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-2">
+                    <label for="date" class="leading-7 text-sm text-gray-600">Date And Time</label>
+                    <input type="datetime-local" id="date" name="date" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  </div>
+                  <div class="relative mb-2">
+                    <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                    <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  </div>
+                <button class="text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Submit Appointment</button>
+                <p class="text-xs text-gray-500 mt-3 text-center">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
+              </div>
+            </div>
+          </section>
+
+    </section>
+
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img src="https://img.icons8.com/external-flatart-icons-flat-flatarticons/70/000000/external-health-care-health-care-and-medical-flatart-icons-flat-flatarticons.png" class="w-20 h-20 text-white p-2 bg-none rounded-full"/>
+            <span class="ml-3 text-xl text-primary">Care Fairy</span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2022 CareFairy —
+            <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@carefairy</a>
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+              </svg>
+            </a>
+            <a class="ml-3 text-gray-500">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+
+
+      <i class="fas fa-arrow-circle-up fa-3x hover:text-blue-600 z-5" id="btnScrollToTop"></i>
+
+      <!-------Javascripts Toggle Menu-------->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+          navLinks.style.right = "0";
+      }
+      function hideMenu() {
+          navLinks.style.right = "-200px";
+      }
+
+
+
+
+
+      const btnScrollToTop = document.querySelector('#btnScrollToTop');
+      btnScrollToTop.addEventListener('click', function(){
+        // window.scrollTo(0,0);
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: "smooth"
+        });
+      });
+  </script>
+</body>
+
+</html>

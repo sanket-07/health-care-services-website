@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+html:focus-within{
+    scroll-behavior: smooth;
+}
+html::selection{
+    background-color: green;
+    /* color: white; */
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(30, 10, 4, 0.6),rgba(4,9,30,0.5)),url('C:/Users/Aruparna/Desktop/heath_care_services/photos/main-img.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+div{
+    transition: background 1s;
+    cursor: pointer;
+    font-weight: 600;
+}
+.header{
+    color: white;
+    
+}
+
+span{
+    color: 	#00BFFF;
+    font-weight: 600;
+}
+section span:first-child{
+    text-decoration: underline;
+}
+span:hover{
+    text-decoration: underline;
+}
+.head:hover{
+    background: white;
+    color: #24a0ed;
+}
+
+.nav-links a::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links a:hover::after{
+    width: 100%;
+}
+
+
+
+div .fa{
+    display: none;
+}
+
+
+.services p, #gallery p, #contact p:first-child, #about .p{
+    font-size: 40px;
+    color: #666;
+    margin: 65px 0;
+}
+.cd:hover{
+    background-color: #24a0ed;
+}
+.cd:hover h3{
+    color: #f44336;
+    
+}
+.cd{
+    color: #666;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+#gallery img:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-size: cover;
+}
+
+a .btn{
+    transition: background-color 1s;
+}
+.btn:hover{
+    background-color:  #0b8cf5;
+}
+
+#btnScrollToTop{
+    position: fixed;
+    right: 40px;
+    bottom: 60px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0,0,0.25);
+    outline: none;
+    cursor: pointer;
+    color: #0b8cf5;
+    background-color: white;
+}
+
+/* media queries for responsive our website */
+@media(max-width:700px){
+    .nav-links a{
+        display: block;
+        color: #0b8cf5;
+        padding-left: 20px;
+    }
+    .nav-links{
+        position: fixed;
+        background: white;
+        height: 100vh;
+        width:200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 10;
+        transition: 1s;
+    }
+    div .fa{
+        display: block;
+        color: #24a0ed;
+        margin: 10px;
+        font-size: 30px;
+        cursor: pointer;
+        text-align: center;
+    }
+    div:hover{
+        color: #0b8cf5;
+    }
+    /* .nav-links a{
+        padding-top: 20px;
+         */
+    /* } */
+
+    #navLinks{
+        padding: 50px;
+    }
+
+    #btnScrollToTop{
+        position: fixed;
+        right: 20px;
+        bottom: 75px;
+        border-radius: 50%;
+        box-shadow: 0 0 15px rgba(0,0,0.25);
+        outline: none;
+        cursor: pointer;
+    }
+}
